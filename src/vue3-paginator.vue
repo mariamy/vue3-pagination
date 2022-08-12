@@ -6,7 +6,7 @@ interface SampleData {
 }
 
 export default /*#__PURE__*/defineComponent({
-  name: 'Vue3Pagination',
+  name: 'Vue3paginator',
   props: {
     currentPage: {
       type: [String, Number],
@@ -76,20 +76,20 @@ export default /*#__PURE__*/defineComponent({
 </script>
 
 <template>
-  <div class="pagination-container">
+  <div class="paginator-container">
     <a
       @click.prevent="setPage(activePage > 1 ? activePage - 1 : 1)"
-      class="pagination-item pagination-item-prev"
+      class="paginator-item paginator-item-prev"
       :class="{ disabled: activePage === 1 }"
     >
       <slot name="prev-button">&lsaquo;</slot>
     </a>
 
-    <div class="pagination-items">
+    <div class="paginator-items">
       <a
         v-for="p in pages"
         :key="p.id"
-        class="pagination-item"
+        class="paginator-item"
         :class="{
           active: activePage === p.n,
           disabled: p.n === space
@@ -108,7 +108,7 @@ export default /*#__PURE__*/defineComponent({
             : pages[pages.length - 1].n
         )
       "
-      class="pagination-item pagination-item-next"
+      class="paginator-item paginator-item-next"
       :class="{ disabled: activePage === pages[pages.length - 1].n }"
     >
       <slot name="next-button">&rsaquo;</slot>
@@ -124,16 +124,16 @@ export default /*#__PURE__*/defineComponent({
   --pg-item-border-radius: 50%;
   --pg-item-distance: 5px;
 }
-.pagination-container {
+.paginator-container {
   display: flex;
   align-items: center;
   gap: var(--pg-item-distance);
 }
-.pagination-items {
+.paginator-items {
   display: flex;
   gap: var(--pg-item-distance);
 }
-.pagination-item {
+.paginator-item {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -141,18 +141,18 @@ export default /*#__PURE__*/defineComponent({
   height: var(--pg-item-height);
   border-radius: var(--pg-item-border-radius);
 }
-.pagination-item.active {
+.paginator-item.active {
   background: var(--primary-color);
   color: #fff;
 }
-.pagination-item:not(.active):active {
+.paginator-item:not(.active):active {
   color: var(--primary-color);
 } 
-.pagination-item:not(.disabled) {
+.paginator-item:not(.disabled) {
   cursor: pointer;
   opacity: 1;
 }
-.pagination-item.disabled {
+.paginator-item.disabled {
   opacity: .3;
 }
 </style>

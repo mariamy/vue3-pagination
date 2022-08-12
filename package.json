@@ -1,12 +1,12 @@
 {
-  "name": "vue3-pagination",
+  "name": "vue3-paginator",
   "version": "1.0.0",
-  "description": "",
+  "description": "vue3 pagination library",
 
-  "main": "dist/vue3-pagination.ssr.js",
-  "browser": "dist/vue3-pagination.esm.js",
-  "module": "dist/vue3-pagination.esm.js",
-  "unpkg": "dist/vue3-pagination.min.js",
+  "main": "dist/vue3-paginator.ssr.js",
+  "browser": "dist/vue3-paginator.esm.js",
+  "module": "dist/vue3-paginator.esm.js",
+  "unpkg": "dist/vue3-paginator.min.js",
   "types": "dist/types/src/entry.esm.d.ts",
 
   "files": [

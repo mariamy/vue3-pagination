@@ -1,11 +1,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Vue3Pagination from '@/vue3-pagination.vue';
+import Vue3Paginator from '@/vue3-paginator.vue';
 
 export default defineComponent({
   name: 'ServeDev',
   components: {
-    Vue3Pagination
+    Vue3Paginator
   },
   methods: {
     handleChange(page: string) {
@@ -17,7 +17,7 @@ export default defineComponent({
 
 <template>
   <div id="app">
-    <vue3-pagination
+    <vue3-paginator
       @change="handleChange"
     />
   </div>

@@ -1,22 +1,22 @@
-# vue3-pagination
+# vue3-paginator
 
 Library to use pagination for vue3
 
 ## Installation
 To install the latest version:
 ```
-npm install --save vue3-pagination
+npm install --save vue3-paginator
 ```
 
 Import to your components
 ```javascript
-import Vue3Pagination from "vue3-otp";
+import Vue3Paginator from "vue3-paginator";
 ```
 
 Example:
 ```javascript
 <template>
-    <vue3-pagination
+    <vue3-paginator
       @change="handleChange"
     />
 </template>

@@ -22,6 +22,21 @@ Example:
       @change="handleChange"
     />
 </template>
+
+<script lang="ts">
+import Vue3Paginator from '@/vue3-paginator.vue';
+
+export default {
+  components: {
+    Vue3Paginator
+  },
+  methods: {
+    handleChange(page: string) {
+      console.log(`Page value is ${page}`)
+    },
+  },
+};
+</script>
 ```
 ## Props
 <table>

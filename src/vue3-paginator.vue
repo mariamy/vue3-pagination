@@ -3,13 +3,13 @@ import { defineComponent } from 'vue';
 
 interface SampleData {
   activePage: number;
-}
+};
 
 export default /*#__PURE__*/defineComponent({
   name: 'Vue3paginator',
   props: {
     currentPage: {
-      type: [String, Number],
+      type: String,
       default: "1"
     },
     perPage: {
@@ -27,7 +27,7 @@ export default /*#__PURE__*/defineComponent({
   },
   data(): SampleData {
     return {
-      activePage: parseInt(this.currentPage as string)
+      activePage: parseInt(this.currentPage)
     };
   },
   computed: {

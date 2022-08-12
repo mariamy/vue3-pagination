@@ -66,6 +66,25 @@ Example:
   </tr>
 </table>
 
+Slots:
+```javascript
+<template>
+  <vue3-paginator
+    @change="handleChange"
+    currentPage="2"
+    perPage="5"
+    :total="200"
+  >
+    <template v-slot:prev-button>
+      <div>prev</div>
+    </template>
+    <template v-slot:next-button>
+      <div>next</div>
+    </template>
+  </vue3-paginator>
+</template>
+```
+
 ## css default variables
 <table>
     <tr>
@@ -93,4 +112,3 @@ Example:
         <th>5px</th>
     </tr>
 </table>
-

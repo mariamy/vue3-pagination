@@ -1,6 +1,6 @@
 {
   "name": "vue3-paginator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue3 pagination library",
 
   "main": "dist/vue3-paginator.ssr.js",

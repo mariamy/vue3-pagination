@@ -92,7 +92,7 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.esm.ts',
     external,
     output: {
-      file: 'dist/vue3-pagination.esm.js',
+      file: 'dist/vue3-paginator.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -131,9 +131,9 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue3-pagination.ssr.js',
+      file: 'dist/vue3-paginator.ssr.js',
       format: 'cjs',
-      name: 'Vue3Pagination',
+      name: 'Vue3Paginator',
       exports: 'auto',
       globals,
     },
@@ -154,9 +154,9 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue3-pagination.min.js',
+      file: 'dist/vue3-paginator.min.js',
       format: 'iife',
-      name: 'Vue3Pagination',
+      name: 'Vue3Paginator',
       exports: 'auto',
       globals,
     },

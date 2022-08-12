@@ -1,6 +1,6 @@
 {
   "name": "vue3-paginator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vue3 pagination library",
 
   "main": "dist/vue3-paginator.ssr.js",
@@ -60,5 +60,9 @@
   },
   "engines": {
     "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariamy/vue3-paginator"
   }
 }

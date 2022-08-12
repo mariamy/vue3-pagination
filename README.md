@@ -2,6 +2,8 @@
 
 Library to use pagination for vue3
 
+![Gifphy](https://media.giphy.com/media/22vg60iQbzbFt2hXMg/giphy.gif)
+
 ## Installation
 To install the latest version:
 ```

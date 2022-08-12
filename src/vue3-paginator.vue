@@ -92,7 +92,7 @@ export default /*#__PURE__*/defineComponent({
         class="paginator-item"
         :class="{
           active: activePage === p.n,
-          disabled: p.n === space
+          space: p.n === space
         }"
         @click.prevent="setPage(p.n)"
         >
@@ -148,7 +148,7 @@ export default /*#__PURE__*/defineComponent({
 .paginator-item:not(.active):active {
   color: var(--primary-color);
 } 
-.paginator-item:not(.disabled) {
+.paginator-item:not(.disabled, .space) {
   cursor: pointer;
   opacity: 1;
 }

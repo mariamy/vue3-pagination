@@ -145,7 +145,7 @@ export default /*#__PURE__*/defineComponent({
   background: var(--primary-color);
   color: #fff;
 }
-.paginator-item:not(.active):active {
+.paginator-item:not(.active, .space):active {
   color: var(--primary-color);
 } 
 .paginator-item:not(.disabled, .space) {
